@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naveenkumar R. Portfolio</title>
+<style>
+/* ===== Fonts & Reset ===== */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; background-color:#fdfcfb; color:#1e1e2f; }
+
+/* ===== Color Palette (Elegant & Majestic) ===== */
+:root {
+  --primary-color: #1e1e2f;       /* Deep navy */
+  --secondary-color: #4b4b6b;     /* Slate blue/gray */
+  --accent-color: #d4af37;        /* Gold for highlights */
+  --bg-light: #fdfcfb;
+  --card-bg: #ffffff;
+  --text-dark: #1e1e2f;
+  --text-light: #ffffff;
+}
+
+/* ===== Containers ===== */
+.container { width: 85%; margin:auto; padding:2rem 0; }
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--text-light);
+  text-align:center;
+  padding:6rem 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+header h1 { font-size:3rem; margin-bottom:0.5rem; letter-spacing:1px; }
+header p { font-size:1.3rem; opacity:0.9; }
+
+/* ===== Sections ===== */
+section { padding:4rem 0; }
+section h2 {
+  font-size:2rem;
+  margin-bottom:2rem;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--accent-color);
+  display:inline-block;
+  padding-bottom:0.3rem;
+}
+
+/* ===== About Me ===== */
+#about p { font-size:1.1rem; max-width:800px; margin:auto; line-height:1.8; }
+
+/* ===== Skills ===== */
+ul { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; list-style:none; }
+ul li {
+  background: var(--card-bg);
+  padding:1rem;
+  border-left:5px solid var(--accent-color);
+  border-radius:8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ul li:hover { transform: translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.08); }
+
+/* ===== Projects ===== */
+.project {
+  background: var(--card-bg);
+  padding:1.5rem;
+  margin-bottom:2rem;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project:hover { transform: translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.12); }
+.project h3 { color: var(--primary-color); margin-bottom:0.8rem; }
+.project p { line-height:1.6; margin-bottom:0.5rem; }
+.project a {
+  display:inline-block;
+  margin-top:0.5rem;
+  text-decoration:none;
+  font-weight:bold;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding:0.3rem 0.7rem;
+  border-radius:5px;
+  transition: all 0.3s ease;
+}
+.project a:hover {
+  background: var(--accent-color);
+  color: var(--text-light);
+  box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align:center;
+  padding:2rem 1rem;
+  background: var(--primary-color);
+  color: var(--text-light);
+  margin-top:4rem;
+}
+footer a { color: var(--accent-color); text-decoration:none; font-weight:bold; }
+footer a:hover { text-decoration:underline; }
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  header h1 { font-size:2.2rem; }
+  header p { font-size:1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <h1>Naveenkumar R.</h1>
+    <p>3rd-year AI & DS Student | Aspiring AI/ML Engineer | Exploring Agentic Frameworks</p>
+  </div>
+</header>
+
+<!-- About Me -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I enjoy building innovative projects that solve real-world problems. I like to think of myself as someone who 
+      “knows enough to get things done”—while I don’t claim to be a master of HTML, CSS, or Java, I can understand, 
+      learn, and code whatever’s needed to bring ideas to life. I am also actively exploring agentic frameworks 
+      to create intelligent and autonomous systems.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, Java, JavaScript, C++</li>
+      <li>Deep Learning (CNN, RNN, GANs, VAE), NLP, Computer Vision, Speech Processing</li>
+      <li>HTML, CSS, JavaScript, Flask, Streamlit (learning and applying as needed)</li>
+      <li>Git, MongoDB, ngrok, Langflow, MCP</li>
+      <li>UI/UX Design, Cloud Deployment, API Development, Agentic Systems</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>MedEase – Mental Health Platform</h3>
+      <p>Developed a full-featured mental health and well-being platform with a clean UI. Features include self-assessment, meditation sessions, relaxation tools, therapist profiles, and notifications.</p>
+      <a href="https://github.com/placeholder-link" target="_blank">GitHub Link</a>
+    </div>
+
+    <div class="project">
+      <h3>AI-Powered ARGO Explorer</h3>
+      <p>Interactive platform for exploring the Indian Ocean using AI-driven search and metadata. Developed unique visualizations and personalized search tools.</p>
+      <a href="https://github.com/placeholder-link" target="_blank">GitHub Link</a>
+    </div>
+
+    <div class="project">
+      <h3>Voice Diarization Project</h3>
+      <p>Developed a voice diarization system to separate and identify speakers in multi-person audio streams, enhancing audio data analysis for collaborative AI projects.</p>
+      <a href="https://github.com/placeholder-link" target="_blank">GitHub Link</a>
+    </div>
+
+    <div class="project">
+      <h3>PSR Image Enhancement – SIH Project</h3>
+      <p>Image enhancement solution for PSR images using deep learning models to improve resolution, contrast, and feature clarity for remote sensing applications.</p>
+      <a href="https://github.com/placeholder-link" target="_blank">GitHub Link</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>Portfolio created by Naveenkumar R. | GitHub: <a href="https://github.com/placeholder-link">placeholder</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
